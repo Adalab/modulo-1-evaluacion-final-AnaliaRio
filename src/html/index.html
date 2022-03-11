@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
   <!-- Font Awesome -->
   <script
   src="https://kit.fontawesome.com/016f8587a2.js"
@@ -18,30 +23,31 @@
 </head>
 <body>
   
-  <!-- HEADER / First module -->
+
+  <!-- HEADER / 1st module -->
 
   <header class="header">
 
     <!-- Header - Nav top -->
 
-      <img class="hero" src="./assets/images/header.jpg" alt="Hero" >
-      <img class="burger-icon" src="./assets/images/menu-hamburger" alt="Burger icon">
-      <img class="logo" src=".assets/images/logo.png" alt="Logo">
+      <img class="burger-icon" src="./assets/images/menu-hamburger.png" alt="Burger icon">
+      <div><img class="logo" src="./assets/images/logo.png" alt="Logo"></div>
 
     <!-- Header - Title & button -->
 
     <section>
       <h1 class="title">Disfruta creando espacios</h1>
-      <button class="button">Comprar ahora</button>
+      <button class="button"><a href="https://adalab.es/">Comprar ahora</a></button>
     </section>
 
   </header>
+
 
   <!-- MAIN -->
 
   <main class="main">
 
-    <!-- Second module -->
+    <!-- 2nd module -->
 
     <section class="spaces">
 
@@ -67,7 +73,7 @@
 
     </section>
 
-    <!-- Third module -->
+    <!-- 3rd module -->
 
     <section class="shipment">
       <img src="./assets/images/icon_4.png">
@@ -76,78 +82,85 @@
       <p><a href="https://adalab.es/">Comprar ahora</a></p>
     </section>
 
-    <!-- Fourth module -->
+    <!-- 4th module -->
 
     <div class="enjoy">
-      <section class="enjoy1">
-        <h2 class="enjoy1__title">Disfruta creando espacios</h2>
-        <p class="enjoy1__text">Una línea de productos diseñados para todos tus espacios</p>
-        <button class="button">Comprar ahora</button>
+      <section
+      class="enjoy__item enjoy__article">
+        <h2 class="enjoy__article__title">Disfruta creando espacios</h2>
+        <p class="enjoy__article__text">Una línea de productos diseñados para todos tus espacios</p>
+        <button class="button"><a href="https://adalab.es/">Comprar ahora</a></button>
       </section>
-      <img src="./assets/images/creando-espacios.jpg">
+      <img
+      class=" enjoy__item enjoy__image" src="./assets/images/creando-espacios.jpg">
     </div>
 
   </main>
+
 
   <!-- FOOTER -->
 
   <footer class="footer">
 
-  <!-- Footer - Section 1 -->
+  <div class="footer__container">
+    <!-- Footer - Section 1 -->
+    <section class="footer__section footer__section1">
+      <h2 class="footer__section1__title">
+        <a href="https://adalab.es/">Tienda</a>
+      </h2>
+      <nav class="nav">
+        <ul class="ul">
+          <li><a href="https://adalab.es/">Productos</a></li>
+          <li><a href="https://adalab.es/">Cajoneras</a></li>
+          <li><a href="https://adalab.es/">Para toda lal casas</a></li>
+          <li><a href="https://adalab.es/">Habitaciones</a></li>
+        </ul>
+      </nav>
+    </section>
+    <!-- Footer - Section 2 -->
+    <section class="footer__section foooter__section2">
+      <h2 class="footer__section2__title">
+        <a href="https://adalab.es/">Nosotros</a>
+      </h2>
+      <nav class="nav">
+        <ul class="ul">
+          <li><a href="https://adalab.es/">Nuestra Guía</a></li>
+          <li><a href="https://adalab.es/">Nuestro diseño</a></li>
+          <li><a href="https://adalab.es/">Nuestra historia</a></li>
+          <li><a href="https://adalab.es/">Ayuda</a></li>
+        </ul>
+      </nav>
+    </section>
 
-  <section class="footer__section1">
-    <h2 class="footer__section1__title"><a href="https://adalab.es/">Tienda</a></h2>
-    <nav class="nav">
-      <ul class="ul">
-        <li><a href="https://adalab.es/">Productos</a></li>
-        <li><a href="https://adalab.es/">Cajoneras</a></li>
-        <li><a href="https://adalab.es/">Para toda lal casas</a></li>
-        <li><a href="https://adalab.es/">Habitaciones</a></li>
-      </ul>
-    </nav>
-  </section>
+    <!-- Footer - Section 3 -->
+    <section class="footer__section footer__section3">
+      <h2 class="footer__section3__title">
+        <a href="https://adalab.es/">Contacto</a>
+      </h2>
 
-  <!-- Footer - Section 2 -->
+      <nav class="nav">
+        <ul class="ul">
+          <li><a href="mailto:ayuda@openspaces.com">ayuda@openspaces.com</a></li>
+          <li><a href="https://adalab.es/">Socios</a></li>
+        </ul>
+      </nav>
 
-  <section class="foooter__section2">
-    <h2 class="footer__section2__title"><a href="https://adalab.es/">Nosotros</a></h2>
-    <nav class="nav">
-      <ul class="ul">
-        <li><a href="https://adalab.es/">Nuestra Guía</a></li>
-        <li><a href="https://adalab.es/">Nuestro diseño</a></li>
-        <li><a href="https://adalab.es/">Nuestra historia</a></li>
-        <li><a href="https://adalab.es/">Ayuda</a></li>
-      </ul>
-    </nav>
-  </section>
+      <nav class="nav">
+        <ul class="ul social-media">
+          <li>
+            <a href="https://adalab.es/"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="https://adalab.es/"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://adalab.es/"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </section>
 
-  <!-- Footer - Section 3 -->
-
-  <section class="footer__section3">
-    <h2 class="footer__section3__title"><a href="https://adalab.es/">Contacto</a></h2>
-
-    <nav class="nav">
-      <ul class="ul">
-        <li><a href="mailto:ayuda@openspaces.com">ayuda@openspaces.com</a></li>
-        <li><a href="https://adalab.es/">Socios</a></li>
-      </ul>
-    </nav>
-    
-    <nav class="nav">
-      <ul class="ul">
-        <li>
-          <a href="https://adalab.es/"><i class="fa-brands fa-linkedin-in"></i></a>
-        </li>
-        <li>
-          <a href="https://adalab.es/"><i class="fa-brands fa-instagram"></i></a>
-        </li>
-        <li>
-          <a href="https://adalab.es/"><i class="fa-brands fa-twitter"></i></a>
-        </li>
-      </ul>
-    </nav>
-  </section>
-
+  </div>
   </footer>
 
 </body>
