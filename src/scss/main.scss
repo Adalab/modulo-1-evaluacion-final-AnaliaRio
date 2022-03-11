@@ -1,0 +1,133 @@
+// @import 'core/variables';
+// @import 'components/code';
+// @import 'components/links';
+// @import 'layout/page';
+// @import 'layout/header';
+// @import 'layout/footer';
+// @import 'pages/index';
+
+@import "core/reset";
+
+// Header
+
+.hero {
+  width: 100vw;
+  position: relative;
+  z-index: 0;
+}
+
+.burger-icon {
+  position: absolute;
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  margin: 36px 43px 136px 33px;
+  object-fit: contain;
+}
+
+.logo {
+  width: 213px;
+  height: 96px;
+  margin: 0 101px 100px 43px;
+}
+
+.button {
+  width: 128px;
+  height: 24px;
+  flex-grow: 0;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+// Module 2
+
+.spaces {
+  position: relative;
+  margin: 389px 0 0;
+  padding: 41px 47px 18px 45px;
+  background-color: #f0ebe5;
+}
+
+.spaces__icon {
+  width: 90px;
+  height: 99px;
+  margin: 37px 121px 47px 111px;
+  object-fit: contain;
+  text-align: center;
+}
+
+// Module 3
+
+.shipment {
+  position: relative;
+  width: 100vw;
+  color: #fff;
+  background-color: #ff975a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// Module 4
+
+.enjoy {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media all and (min-width: 415px) {
+    flex-direction: row;
+  }
+}
+
+// Footer
+
+.footer {
+  position: relative;
+  color: #b6c8c9;
+
+  width: 413px;
+  height: 545px;
+  margin: 304px 1px 0 0;
+  padding: 56px 28px 16px 146px;
+  background-color: #0c474b;
+
+  display: flex;
+  flex-direction: column;
+
+  &__section1 {
+    width: 208px;
+    height: 96px;
+    flex-grow: 0;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #b6c8c9;
+
+    &__title {
+    }
+  }
+
+  &__section2 {
+  }
+
+  &__section3 {
+  }
+
+  @media all and (min-width: 415px) {
+    flex-direction: row;
+  }
+}
