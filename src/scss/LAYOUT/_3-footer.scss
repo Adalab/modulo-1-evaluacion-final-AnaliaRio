@@ -1,0 +1,27 @@
+.footer {
+  width: 100vw;
+  background-color: $dark-green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__section {
+    padding: 71px 0 74px 0;
+    text-align: left;
+  }
+
+  @media all and (min-width: 415px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+
+.instagram {
+  padding: 0 3px;
+}
