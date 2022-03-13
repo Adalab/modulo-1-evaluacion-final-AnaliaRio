@@ -40,6 +40,18 @@
 
   &__article {
     color: $dark-green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+      width: 208px;
+    }
+  }
+
+  &__text {
+    width: 208px;
   }
 
   &__icon {
