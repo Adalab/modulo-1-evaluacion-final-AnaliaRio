@@ -3,20 +3,43 @@
 .spaces {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  grid-template-rows: 113px 280px 280px 280px;
   text-align: center;
+  justify-content: center;
   padding: 41px 47px 18px 45px;
   background-color: $light-grey-background;
-  color: $dark-green;
 
-  &__title {
-    font-size: 24px;
+  @media all and (min-width: 900px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25% 75%;
+  }
+
+  &__container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    @media all and (min-width: 900px) {
+      grid-column: span 3;
+    }
+  }
+
+  &__title {
+    width: 322px;
+    font-size: 24px;
+    color: $dark-green;
 
     &--uc {
       text-transform: uppercase;
     }
+
+    @media all and (min-width: 1380px) {
+      width: 799px;
+      font-size: 36px;
+    }
+  }
+
+  &__article {
+    color: $dark-green;
   }
 
   &__icon {
@@ -31,6 +54,7 @@
 // 3RD MODULE
 
 .shipment {
+  height: 352px;
   color: #fff;
   background-color: $orange;
   display: flex;
@@ -38,6 +62,10 @@
   justify-content: center;
   align-items: center;
   padding: 60px 0 63px 0;
+
+  @media all and (min-width: 1380px) {
+    height: 400px;
+  }
 
   &__title {
     font-size: 24px;
@@ -55,7 +83,7 @@
   flex-direction: column;
 
   &__article {
-    width: 100%;
+    // width: 100%;
     background-color: $light-grey-background;
     display: flex;
     flex-direction: column;
@@ -82,9 +110,7 @@
     width: 100%;
   }
 
-  @media all and (min-width: 1728px) {
+  @media all and (min-width: 1380px) {
     flex-direction: row;
-    // flex-wrap: wrap;
-    // width: 100;
   }
 }

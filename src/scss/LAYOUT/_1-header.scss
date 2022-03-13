@@ -10,32 +10,80 @@
   align-items: center;
   justify-content: center;
 
+  &__title {
+    color: $dark-green;
+  }
+
   &__burger-icon {
-    position: fixed;
+    // Scroll leaves it behind
+    position: absolute;
     top: 55px;
     left: 33px;
     width: 24px;
     height: 24px;
 
-    // @media all and (min-width: 1728px) {
-    //   display: none;
-    // }
+    // Stays put during scroll
+    // position: fixed;
+    // top: 55px;
+    // left: 33px;
+    // width: 24px;
+    // height: 24px;
+
+    @media all and (min-width: 1380px) {
+      display: none;
+    }
   }
 
   &__nav {
-    // width: 100%;
-    display: none;
-    // @media all and (max-width: 415px) {
-    //   display: none;
-    // }
+    color: $dark-green;
+    position: fixed;
+    top: 76px;
+    left: 10%;
+
+    @media all and (max-width: 1380px) {
+      display: none;
+    }
+
+    @media all and (min-width: 1380px) {
+      display: block;
+    }
+
+    &__menu {
+      width: 424px;
+      color: $dark-green;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &__item {
+        color: $dark-green;
+      }
+    }
   }
 
   &__logo {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     top: 19px;
-    // transform: translateX(50%);
     width: 213px;
     height: 96px;
+
+    @media all and (min-width: 900px) {
+      top: 39px;
+    }
+  }
+
+  @media all and (min-width: 900px) {
+    align-items: flex-start;
+  }
+
+  &__focus {
+    @media all and (min-width: 900px) {
+      position: relative;
+      left: 10%;
+    }
   }
 }
 
@@ -46,8 +94,6 @@
   background-color: $dark-green;
   width: 176px;
   height: 48px;
-  gap: 10px;
-  margin: 24px 119px 0 62px;
   padding: 12px 24px;
   cursor: pointer;
 }
