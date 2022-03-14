@@ -3,8 +3,8 @@
   background-color: $dark-green;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: flex-start;
+  // position: relative;
 
   &__section {
     position: relative;
@@ -32,7 +32,6 @@
     animation-name: scale;
     animation-duration: 5000ms;
     animation-iteration-count: infinite;
-    // animation-timing-function: linear;
 
     @media all and (min-width: 900px) {
       right: 57px;
@@ -58,8 +57,17 @@
 .social-media {
   display: flex;
   flex-direction: row;
-}
+  justify-content: flex-start;
 
-.instagram {
-  padding: 0 3px;
+  &--linkedin {
+    padding-right: 10px;
+  }
+
+  &--instragram {
+    padding: 0 10px 0;
+  }
+
+  &--twitter {
+    padding-left: 10px;
+  }
 }
