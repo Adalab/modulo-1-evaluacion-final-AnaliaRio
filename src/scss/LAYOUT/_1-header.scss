@@ -4,7 +4,9 @@
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
+
   height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +14,12 @@
 
   &__title {
     color: $dark-green;
+    font-size: 24px;
+    padding-bottom: 20px;
+    @media all and (min-width: 900px) {
+      font-size: 36px;
+      width: 430px;
+    }
   }
 
   &__burger-icon {
@@ -68,15 +76,30 @@
     }
   }
 
-  @media all and (min-width: 900px) {
-    align-items: flex-start;
-  }
-
   &__focus {
+    width: 414px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @media all and (min-width: 900px) {
+      align-items: flex-start;
+      width: 430px;
       position: relative;
       left: 10%;
     }
+  }
+
+  @media all and (min-width: 900px) {
+    align-items: flex-start;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 900px) {
+    justify-content: flex-start;
   }
 }
 
