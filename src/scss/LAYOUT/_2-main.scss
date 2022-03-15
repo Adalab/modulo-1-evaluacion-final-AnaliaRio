@@ -71,6 +71,44 @@
   }
 }
 
+// NEW MODULE
+
+.section-products {
+  width: 100vw;
+  height: 700px;
+  background-color: $dark-green;
+  color: $white;
+
+  &__title {
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  &__subtitle {
+    margin-left: 30px;
+    &__1 {
+      @media all and (min-width: 768px) {
+        padding-left: 30px;
+      }
+    }
+
+    &__2 {
+      @media all and (min-width: 768px) {
+        padding-right: 30px;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+}
+
 // 3RD MODULE
 
 .shipment {
